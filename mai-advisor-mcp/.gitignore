@@ -279,3 +279,4 @@ logs/
 # MCP specific
 mcp_cache/
 agent_workspace/
+.configs/**/settings.json
