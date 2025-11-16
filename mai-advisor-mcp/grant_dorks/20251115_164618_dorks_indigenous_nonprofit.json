@@ -1,0 +1,10 @@
+{
+  "generated_at": "2025-11-15T16:46:18.406744",
+  "topic": "indigenous nonprofit",
+  "location": "great lakes",
+  "dorks": {
+    "google": "(intext:grant OR inurl:grant OR intext:philanthropy OR inurl:philanthropy OR intext:application OR inurl:application OR intext:funding OR inurl:funding OR intext:opportunit* OR inurl:opportunit* OR intext:intake OR inurl:intake OR intext:award OR inurl:award OR intext:fellowship OR inurl:fellowship OR intext:unrestricted OR inurl:unrestricted OR intext:guidelines OR inurl:guidelines OR intext:apply OR inurl:apply OR intext:endowment OR inurl:endowment OR intext:fund OR inurl:fund OR intext:tribal OR intext:indigenous OR intext:native american OR intext:first nation OR intext:native OR intext:federally recognized OR inurl:tribal OR inurl:indigenous OR inurl:native-american OR inurl:first-nation OR inurl:native OR inurl:federally-recognized) \"tribal\" OR \"indigenous\" OR \"native\" OR \"first nation\" OR \"native american\" OR \"federally recognized\" OR \"cib\" OR \"state recognized\" OR \"tribal citizen\" OR \"tribal id\" OR \"tribal identification\" OR \"indigena\" \"our grant ** process\" OR \"our ** process\" OR \"application process\" OR \"how to apply\" OR \"submit application\" OR \"request for proposals\" OR \"rfp\" OR \"letter of inquiry\" OR \"loi\" OR \"eligibility\" OR \"criteria\" OR \"consideration\" \"great lakes\"",
+    "bing": "(\"grant\" OR \"philanthropy\" OR \"application\" OR \"funding\" OR \"opportunit*\" OR \"intake\" OR \"award\" OR \"fellowship\" OR \"unrestricted\" OR \"guidelines\") intitle:\"indigenous nonprofit\" (\"indigenous\" OR \"nonprofit\") loc:\"great lakes\" (\"application\" OR \"apply\" OR \"deadline\" OR \"eligibility\")",
+    "duckduckgo": "\"indigenous nonprofit\" (grant OR funding OR fellowship OR application) (\"great lakes\") (intitle:grant OR intitle:funding OR intitle:apply) (\"deadline\" OR \"eligibility\" OR \"guidelines\")"
+  }
+}

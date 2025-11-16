@@ -1,0 +1,16 @@
+{
+  "advisor_type": "research",
+  "timestamp": "2025-11-15T13:40:20.285379",
+  "topic": "community health initiative",
+  "analysis": {
+    "market_size": "Large",
+    "competition": "Moderate"
+  },
+  "recommendations": [
+    "Conduct needs assessment",
+    "Document impact"
+  ],
+  "metadata": {
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "generated_at": "2025-11-15T14:37:48.589385",
+  "topic": "test topic",
+  "location": "Michigan",
+  "dorks": {
+    "google": "test google dork",
+    "bing": "test bing dork",
+    "duckduckgo": "test ddg dork"
+  }
+}

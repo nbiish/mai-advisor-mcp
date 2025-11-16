@@ -20,6 +20,7 @@ from search_operators import (
     SearchEngine,
 )
 from grant_agent import GrantResearchAgent
+from advisor_tools import MAIAdvisorWorkflow
 
 # Load environment variables
 load_dotenv()
@@ -30,6 +31,9 @@ app = Server("mai-advisor-mcp")
 
 # Initialize grant research agent
 agent = GrantResearchAgent()
+
+# Initialize MAI Advisor workflow
+workflow = MAIAdvisorWorkflow()
 
 
 @app.list_resources()
@@ -194,13 +198,13 @@ async def list_tools() -> list[Tool]:
                         "type": "string",
                         "description": "Geographic location or region"
                     },
-                    "funding_range_min": {
+                    "amount_min": {
                         "type": "integer",
-                        "description": "Minimum funding amount in dollars"
+                        "description": "Minimum amount in dollars (e.g., grant size, revenue threshold)"
                     },
-                    "funding_range_max": {
+                    "amount_max": {
                         "type": "integer",
-                        "description": "Maximum funding amount in dollars"
+                        "description": "Maximum amount in dollars (e.g., grant size, revenue threshold)"
                     },
                     "deadline_months": {
                         "type": "integer",
@@ -244,13 +248,13 @@ async def list_tools() -> list[Tool]:
                         "type": "string",
                         "description": "Geographic location"
                     },
-                    "funding_range_min": {
+                    "amount_min": {
                         "type": "integer",
-                        "description": "Minimum funding amount"
+                        "description": "Minimum amount in dollars"
                     },
-                    "funding_range_max": {
+                    "amount_max": {
                         "type": "integer",
-                        "description": "Maximum funding amount"
+                        "description": "Maximum amount in dollars"
                     },
                     "engines": {
                         "type": "array",
@@ -285,6 +289,76 @@ async def list_tools() -> list[Tool]:
                 },
                 "required": ["grant_description", "organization_description"]
             }
+        ),
+        Tool(
+            name="expert_advisor_workflow",
+            description="Execute complete MAI Advisor workflow: Expert advisor analyzes request → generates research tasks → research crew produces search dorks (advanced queries) → financial advisor provides guidance. This is the primary tool for comprehensive grant search strategy.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "topic": {
+                        "type": "string",
+                        "description": "Main topic or focus area (e.g., 'education technology for indigenous communities')"
+                    },
+                    "context": {
+                        "type": "string",
+                        "description": "Additional context about your needs or situation"
+                    },
+                    "organization_type": {
+                        "type": "string",
+                        "description": "Type of organization (nonprofit, business, university, individual, etc.)"
+                    },
+                    "sector": {
+                        "type": "string",
+                        "description": "Primary sector (education, healthcare, technology, arts, etc.)"
+                    },
+                    "amount_min": {
+                        "type": "integer",
+                        "description": "Minimum amount in dollars"
+                    },
+                    "amount_max": {
+                        "type": "integer",
+                        "description": "Maximum amount in dollars"
+                    },
+                    "timeline": {
+                        "type": "string",
+                        "description": "Timeline or urgency (e.g., 'need funding within 6 months')"
+                    },
+                    "include_financial_guidance": {
+                        "type": "boolean",
+                        "description": "Include financial advisor guidance in response (default: true)",
+                        "default": True
+                    }
+                },
+                "required": ["topic"]
+            }
+        ),
+        Tool(
+            name="financial_guidance",
+            description="Get financial guidance for grant seeking process from expert financial advisor. Covers budgeting, compliance, planning, and grant management best practices.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "stage": {
+                        "type": "string",
+                        "enum": ["research", "planning", "application", "management", "general"],
+                        "description": "Current stage in grant process"
+                    },
+                    "amount_min": {
+                        "type": "integer",
+                        "description": "Minimum funding amount being considered"
+                    },
+                    "amount_max": {
+                        "type": "integer",
+                        "description": "Maximum funding amount being considered"
+                    },
+                    "organization_type": {
+                        "type": "string",
+                        "description": "Type of organization (nonprofit, business, etc.)"
+                    }
+                },
+                "required": ["stage"]
+            }
         )
     ]
 
@@ -300,8 +374,8 @@ async def call_tool(name: str, arguments: Any) -> Sequence[TextContent | ImageCo
             organization_type=arguments.get("organization_type"),
             sector=arguments.get("sector"),
             location=arguments.get("location"),
-            funding_range_min=arguments.get("funding_range_min"),
-            funding_range_max=arguments.get("funding_range_max"),
+            amount_min=arguments.get("amount_min"),
+            amount_max=arguments.get("amount_max"),
             deadline_months=arguments.get("deadline_months"),
             exclude_terms=arguments.get("exclude_terms")
         )
@@ -323,8 +397,8 @@ async def call_tool(name: str, arguments: Any) -> Sequence[TextContent | ImageCo
             organization_type=arguments.get("organization_type"),
             sector=arguments.get("sector"),
             location=arguments.get("location"),
-            funding_range_min=arguments.get("funding_range_min"),
-            funding_range_max=arguments.get("funding_range_max")
+            amount_min=arguments.get("amount_min"),
+            amount_max=arguments.get("amount_max")
         )
         
         # Parse engine list

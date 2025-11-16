@@ -16,8 +16,8 @@ class GrantSearchCriteria:
     """Criteria for grant searches."""
     keywords: List[str]
     organization_type: Optional[str] = None  # nonprofit, business, individual, etc.
-    funding_range_min: Optional[int] = None
-    funding_range_max: Optional[int] = None
+    amount_min: Optional[int] = None  # Minimum amount (generic - can be funding, revenue, etc.)
+    amount_max: Optional[int] = None  # Maximum amount (generic - can be funding, revenue, etc.)
     location: Optional[str] = None
     sector: Optional[str] = None  # education, healthcare, technology, etc.
     deadline_months: Optional[int] = None  # grants due within X months
@@ -65,15 +65,15 @@ class GoogleSearchOperatorGenerator:
         if criteria.location:
             query_parts.append(f'"{criteria.location}"')
         
-        # Funding range (approximate with keywords)
-        if criteria.funding_range_min or criteria.funding_range_max:
-            funding_terms = []
-            if criteria.funding_range_min and criteria.funding_range_min >= 100000:
-                funding_terms.append('"six figures" OR "$100,000+"')
-            if criteria.funding_range_max and criteria.funding_range_max <= 50000:
-                funding_terms.append('"small grant" OR "seed funding"')
-            if funding_terms:
-                query_parts.append(f"({' OR '.join(funding_terms)})")
+        # Amount range (approximate with keywords)
+        if criteria.amount_min or criteria.amount_max:
+            amount_terms = []
+            if criteria.amount_min and criteria.amount_min >= 100000:
+                amount_terms.append('"six figures" OR "$100,000+"')
+            if criteria.amount_max and criteria.amount_max <= 50000:
+                amount_terms.append('"small grant" OR "seed funding"')
+            if amount_terms:
+                query_parts.append(f"({' OR '.join(amount_terms)})")
         
         # Deadline proximity
         if criteria.deadline_months:
@@ -168,8 +168,8 @@ class BingSearchOperatorGenerator:
         if criteria.location:
             query_parts.append(f'loc:"{criteria.location}"')
         
-        # Funding information
-        if criteria.funding_range_min or criteria.funding_range_max:
+        # Amount information
+        if criteria.amount_min or criteria.amount_max:
             query_parts.append('contains:("funding amount" OR "award amount" OR "grant size")')
         
         # Deadline information
@@ -239,10 +239,10 @@ class DuckDuckGoOperatorGenerator:
         if criteria.location:
             query_parts.append(f'"{criteria.location}"')
         
-        # Funding range indicators
-        if criteria.funding_range_min and criteria.funding_range_min >= 100000:
+        # Amount range indicators
+        if criteria.amount_min and criteria.amount_min >= 100000:
             query_parts.append('"large grant" OR "$100,000"')
-        elif criteria.funding_range_max and criteria.funding_range_max <= 25000:
+        elif criteria.amount_max and criteria.amount_max <= 25000:
             query_parts.append('"small grant" OR "micro grant"')
         
         # Deadline

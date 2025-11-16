@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-11-15T14:37:48.591973",
+  "topic": "community health initiative",
+  "executive_summary": "Comprehensive plan based on 6 advisor reports",
+  "business_plan": {
+    "mission": "Serve community health needs"
+  },
+  "grant_strategy": {
+    "approach": "Multi-source funding"
+  },
+  "financial_projections": {
+    "year_1": "$75,000"
+  },
+  "implementation_timeline": [
+    {
+      "phase": "Q1",
+      "activities": "Prepare applications"
+    },
+    {
+      "phase": "Q2",
+      "activities": "Submit grants"
+    }
+  ],
+  "risk_assessment": {
+    "risks": [
+      "Funding delays"
+    ]
+  },
+  "success_metrics": [
+    "30% grant success rate"
+  ],
+  "source_reports": [
+    "20251115_143748_financial_community_health_initiative.json",
+    "20251115_143748_grant_community_health_initiative.json",
+    "20251115_143748_research_community_health_initiative.json"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "advisor_type": "financial",
+  "timestamp": "2025-11-15T14:37:48.588041",
+  "topic": "test project",
+  "analysis": {
+    "test": "data"
+  },
+  "recommendations": [
+    "rec 1",
+    "rec 2"
+  ],
+  "metadata": {
+    "version": "test"
+  }
+}

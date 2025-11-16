@@ -1,0 +1,29 @@
+{
+  "timestamp": "2025-11-15T13:40:20.283844",
+  "topic": "test project",
+  "executive_summary": "Test summary",
+  "business_plan": {
+    "test": "plan"
+  },
+  "grant_strategy": {
+    "test": "strategy"
+  },
+  "financial_projections": {
+    "test": "projections"
+  },
+  "implementation_timeline": [
+    {
+      "phase": "test",
+      "activities": "testing"
+    }
+  ],
+  "risk_assessment": {
+    "test": "risks"
+  },
+  "success_metrics": [
+    "metric 1"
+  ],
+  "source_reports": [
+    "test.json"
+  ]
+}

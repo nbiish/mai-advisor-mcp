@@ -1,0 +1,19 @@
+{
+  "advisor_type": "grant",
+  "timestamp": "2025-11-15T13:40:20.285220",
+  "topic": "community health initiative",
+  "analysis": {
+    "opportunities": [
+      "Federal grants",
+      "State grants"
+    ],
+    "success_rate": "65%"
+  },
+  "recommendations": [
+    "Apply to federal programs",
+    "Build local partnerships"
+  ],
+  "metadata": {
+    "version": "1.0"
+  }
+}

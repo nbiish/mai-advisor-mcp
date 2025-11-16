@@ -1,0 +1,42 @@
+{
+  "generated_at": "2025-11-15T12:55:19.364520",
+  "description": "Extensive Google Dork Generation Examples",
+  "test_results": [
+    {
+      "name": "Indigenous/Tribal Grants - Great Lakes Region",
+      "topic": "indigenous tribal native american",
+      "location": "Michigan, Minnesota, Wisconsin",
+      "passed": true,
+      "google_dork": "(intext:grant OR inurl:grant OR intext:philanthropy OR inurl:philanthropy OR intext:application OR inurl:application OR intext:funding OR inurl:funding OR intext:opportunit* OR inurl:opportunit* OR intext:intake OR inurl:intake OR intext:award OR inurl:award OR intext:fellowship OR inurl:fellowship OR intext:unrestricted OR inurl:unrestricted OR intext:guidelines OR inurl:guidelines OR intext:apply OR inurl:apply OR intext:endowment OR inurl:endowment OR intext:fund OR inurl:fund OR intext:tribal OR intext:indigenous OR intext:native american OR intext:first nation OR intext:native OR intext:federally recognized OR inurl:tribal OR inurl:indigenous OR inurl:native-american OR inurl:first-nation OR inurl:native OR inurl:federally-recognized) \"tribal\" OR \"indigenous\" OR \"native\" OR \"first nation\" OR \"native american\" OR \"federally recognized\" OR \"cib\" OR \"state recognized\" OR \"tribal citizen\" OR \"tribal id\" OR \"tribal identification\" OR \"indigena\" \"our grant ** process\" OR \"our ** process\" OR \"application process\" OR \"how to apply\" OR \"submit application\" OR \"request for proposals\" OR \"rfp\" OR \"letter of inquiry\" OR \"loi\" OR \"eligibility\" OR \"criteria\" OR \"consideration\" \"Michigan\" OR \"Minnesota\" OR \"Wisconsin\"",
+      "bing_dork": "(\"grant\" OR \"philanthropy\" OR \"application\" OR \"funding\" OR \"opportunit*\" OR \"intake\" OR \"award\" OR \"fellowship\" OR \"unrestricted\" OR \"guidelines\") intitle:\"indigenous tribal native american\" (\"indigenous\" OR \"tribal\" OR \"native\" OR \"american\") loc:\"Michigan\" (\"application\" OR \"apply\" OR \"deadline\" OR \"eligibility\")",
+      "duckduckgo_dork": "\"indigenous tribal native american\" (grant OR funding OR fellowship OR application) (\"Michigan\" OR \"Minnesota\" OR \"Wisconsin\") (intitle:grant OR intitle:funding OR intitle:apply) (\"deadline\" OR \"eligibility\" OR \"guidelines\")"
+    },
+    {
+      "name": "Indigenous Education - Southwest",
+      "topic": "indigenous education",
+      "location": "Arizona, New Mexico",
+      "passed": true,
+      "google_dork": "(intext:grant OR inurl:grant OR intext:philanthropy OR inurl:philanthropy OR intext:application OR inurl:application OR intext:funding OR inurl:funding OR intext:opportunit* OR inurl:opportunit* OR intext:intake OR inurl:intake OR intext:award OR inurl:award OR intext:fellowship OR inurl:fellowship OR intext:unrestricted OR inurl:unrestricted OR intext:guidelines OR inurl:guidelines OR intext:apply OR inurl:apply OR intext:endowment OR inurl:endowment OR intext:fund OR inurl:fund OR intext:tribal OR intext:indigenous OR intext:native american OR intext:first nation OR intext:native OR intext:federally recognized OR inurl:tribal OR inurl:indigenous OR inurl:native-american OR inurl:first-nation OR inurl:native OR inurl:federally-recognized) \"tribal\" OR \"indigenous\" OR \"native\" OR \"first nation\" OR \"native american\" OR \"federally recognized\" OR \"cib\" OR \"state recognized\" OR \"tribal citizen\" OR \"tribal id\" OR \"tribal identification\" OR \"indigena\" \"our grant ** process\" OR \"our ** process\" OR \"application process\" OR \"how to apply\" OR \"submit application\" OR \"request for proposals\" OR \"rfp\" OR \"letter of inquiry\" OR \"loi\" OR \"eligibility\" OR \"criteria\" OR \"consideration\" \"Arizona\" OR \"New Mexico\"",
+      "bing_dork": "(\"grant\" OR \"philanthropy\" OR \"application\" OR \"funding\" OR \"opportunit*\" OR \"intake\" OR \"award\" OR \"fellowship\" OR \"unrestricted\" OR \"guidelines\") intitle:\"indigenous education\" (\"indigenous\" OR \"education\") loc:\"Arizona\" (\"application\" OR \"apply\" OR \"deadline\" OR \"eligibility\")",
+      "duckduckgo_dork": "\"indigenous education\" (grant OR funding OR fellowship OR application) (\"Arizona\" OR \"New Mexico\") (intitle:grant OR intitle:funding OR intitle:apply) (\"deadline\" OR \"eligibility\" OR \"guidelines\")"
+    },
+    {
+      "name": "Healthcare - No Location",
+      "topic": "healthcare technology",
+      "location": null,
+      "passed": true,
+      "google_dork": "(intext:grant OR inurl:grant OR intext:philanthropy OR inurl:philanthropy OR intext:application OR inurl:application OR intext:funding OR inurl:funding OR intext:opportunit* OR inurl:opportunit* OR intext:intake OR inurl:intake OR intext:award OR inurl:award OR intext:fellowship OR inurl:fellowship OR intext:unrestricted OR inurl:unrestricted OR intext:guidelines OR inurl:guidelines OR intext:apply OR inurl:apply OR intext:endowment OR inurl:endowment OR intext:fund OR inurl:fund) \"healthcare technology\" OR \"healthcare\" OR \"technology\" OR \"healthcare\" OR \"technology\" \"our grant ** process\" OR \"our ** process\" OR \"application process\" OR \"how to apply\" OR \"submit application\" OR \"request for proposals\" OR \"rfp\" OR \"letter of inquiry\" OR \"loi\" OR \"eligibility\" OR \"criteria\" OR \"consideration\"",
+      "bing_dork": "(\"grant\" OR \"philanthropy\" OR \"application\" OR \"funding\" OR \"opportunit*\" OR \"intake\" OR \"award\" OR \"fellowship\" OR \"unrestricted\" OR \"guidelines\") intitle:\"healthcare technology\" (\"healthcare\" OR \"technology\") (\"application\" OR \"apply\" OR \"deadline\" OR \"eligibility\")",
+      "duckduckgo_dork": "\"healthcare technology\" (grant OR funding OR fellowship OR application) (intitle:grant OR intitle:funding OR intitle:apply) (\"deadline\" OR \"eligibility\" OR \"guidelines\")"
+    },
+    {
+      "name": "Single Location - California",
+      "topic": "nonprofit capacity building",
+      "location": "California",
+      "passed": true,
+      "google_dork": "(intext:grant OR inurl:grant OR intext:philanthropy OR inurl:philanthropy OR intext:application OR inurl:application OR intext:funding OR inurl:funding OR intext:opportunit* OR inurl:opportunit* OR intext:intake OR inurl:intake OR intext:award OR inurl:award OR intext:fellowship OR inurl:fellowship OR intext:unrestricted OR inurl:unrestricted OR intext:guidelines OR inurl:guidelines OR intext:apply OR inurl:apply OR intext:endowment OR inurl:endowment OR intext:fund OR inurl:fund) \"nonprofit capacity building\" OR \"nonprofit\" OR \"capacity\" OR \"building\" OR \"nonprofit\" OR \"capacity\" OR \"building\" \"our grant ** process\" OR \"our ** process\" OR \"application process\" OR \"how to apply\" OR \"submit application\" OR \"request for proposals\" OR \"rfp\" OR \"letter of inquiry\" OR \"loi\" OR \"eligibility\" OR \"criteria\" OR \"consideration\" \"California\"",
+      "bing_dork": "(\"grant\" OR \"philanthropy\" OR \"application\" OR \"funding\" OR \"opportunit*\" OR \"intake\" OR \"award\" OR \"fellowship\" OR \"unrestricted\" OR \"guidelines\") intitle:\"nonprofit capacity building\" (\"nonprofit\" OR \"capacity\" OR \"building\") loc:\"California\" (\"application\" OR \"apply\" OR \"deadline\" OR \"eligibility\")",
+      "duckduckgo_dork": "\"nonprofit capacity building\" (grant OR funding OR fellowship OR application) (\"California\") (intitle:grant OR intitle:funding OR intitle:apply) (\"deadline\" OR \"eligibility\" OR \"guidelines\")"
+    }
+  ]
+}

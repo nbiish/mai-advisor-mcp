@@ -1,0 +1,16 @@
+{
+  "advisor_type": "financial",
+  "timestamp": "2025-11-15T13:40:20.285021",
+  "topic": "community health initiative",
+  "analysis": {
+    "budget": "$100,000",
+    "funding_gap": "$75,000"
+  },
+  "recommendations": [
+    "Seek grant funding",
+    "Build financial reserves"
+  ],
+  "metadata": {
+    "version": "1.0"
+  }
+}

@@ -4,11 +4,13 @@ AI-powered Model Context Protocol (MCP) server for discovering and analyzing gra
 
 ## 🌟 Features
 
-### 🔍 **Multi-Engine Search Operators**
-Generate optimized search queries for:
-- **Google** - Advanced operators with exact matching, site restrictions, and file types
-- **Bing** - Location-based targeting and content filtering
-- **DuckDuckGo** - Privacy-focused search strategies
+### 🔍 **Extensive Google Dork Generation**
+Production-grade search queries with comprehensive coverage:
+- **Grant terminology** - 13+ core terms with intext/inurl variations (grant, philanthropy, funding, fellowship, etc.)
+- **Identity-aware** - Automatic expansion for indigenous/tribal/native american contexts
+- **Process terms** - Wildcards like "our grant ** process" for flexible matching
+- **Location targeting** - Comma-separated locations (e.g., "Michigan, Minnesota")
+- **Multi-engine support** - Google, Bing, DuckDuckGo optimized queries
 
 ### 🤖 **AI-Powered Research**
 - Deep research using LangChain's DeepAgents architecture
