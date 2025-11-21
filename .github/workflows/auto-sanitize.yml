@@ -5,10 +5,12 @@ on:
     branches: [ main, dev, staging ]
     paths:
       - '.configs/**/*.json'
+      - 'mai-advisor-mcp/.configs/**/*.json'
   pull_request:
     branches: [ main ]
     paths:
       - '.configs/**/*.json'
+      - 'mai-advisor-mcp/.configs/**/*.json'
 
 permissions:
   contents: write
@@ -18,4 +20,6 @@ jobs:
   sanitize:
     uses: ./.github/workflows/reusable-sanitize.yml
     with:
-      target-paths: '.configs/**/*.json'
+      target-paths: |
+        .configs/**/*.json
+        mai-advisor-mcp/.configs/**/*.json

@@ -7,7 +7,9 @@ on:
         description: 'Glob pattern for files to sanitize'
         required: true
         type: string
-        default: '.configs/**/*.json'
+        default: |
+          .configs/**/*.json
+          mai-advisor-mcp/.configs/**/*.json
 
 jobs:
   sanitize:
@@ -28,18 +30,34 @@ jobs:
           python-version: '3.x'
 
       - name: Sanitize files
+        env:
+          TARGET_PATTERNS: ${{ inputs.target-paths }}
         run: |
-          echo "🧹 Sanitizing files in ${{ inputs.target-paths }}..."
+          echo "🧹 Sanitizing files matching configured patterns..."
           python3 - <<'PY'
-            import glob, subprocess, sys
-            pattern = "${{ inputs.target-paths }}"
-            files = glob.glob(pattern, recursive=True)
-            if not files:
-                print("No files matched for pattern:", pattern)
-                sys.exit(0)
-            cmd = ["python3", ".github/scripts/sanitize.py"] + files
-            print("Running:", " ".join(cmd))
-            subprocess.check_call(cmd)
+          import glob
+          import os
+          import subprocess
+          import sys
+
+          patterns = [p.strip() for p in os.environ.get("TARGET_PATTERNS", "").splitlines() if p.strip()]
+          if not patterns:
+            print("No target patterns provided; skipping sanitize step.")
+            sys.exit(0)
+
+          files = []
+          for pattern in patterns:
+            files.extend(glob.glob(pattern, recursive=True))
+
+          files = sorted(set(files))
+
+          if not files:
+            print("No files matched any sanitize pattern.")
+            sys.exit(0)
+
+          cmd = ["python3", ".github/scripts/sanitize.py"] + files
+          print("Running:", " ".join(cmd))
+          subprocess.check_call(cmd)
           PY
           
       - name: Check for changes
