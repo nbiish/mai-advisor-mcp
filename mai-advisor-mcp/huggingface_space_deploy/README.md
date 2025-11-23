@@ -11,7 +11,7 @@ license: mit
 tags:
   - mcp-in-action-track-enterprise
   - building-mcp-track-enterprise
-short_description: Complete grant planning system with AI browser agent integration and native MCP server. Generates strategic frameworks, search queries, and autonomous agent instructions for nonprofits.
+short_description: AI grant planning system for nonprofits with MCP & agents.
 ---
 
 # 🎯 MAI Advisor - Multi-Agent Intelligence Grant Planning System
@@ -25,13 +25,13 @@ short_description: Complete grant planning system with AI browser agent integrat
 - **Tracks:** MCP in Action (Enterprise) + Building MCP (Enterprise)
 - **Submission Date:** November 16, 2025
 - **Team:** nbiish
-- **Social Post:** [ADD YOUR TWITTER/LINKEDIN POST LINK AFTER YOU POST]
+- **Social Post:** [ADD YOUR TWITTER/LINKEDIN/FACEBOOK POST LINK AFTER YOU POST]
 
 ---
 
 ## 📹 Demo Video
 
-**[🎥 WATCH DEMO VIDEO HERE - ADD YOUR YOUTUBE/LOOM LINK]**
+**[🎥 WATCH DEMO VIDEO HERE - ADD YOUR YOUTUBE/LOOM/FACEBOOK LINK]**
 
 *Video showcases:*
 - ✅ Gradio web interface workflow (0:00-2:30)
@@ -39,18 +39,6 @@ short_description: Complete grant planning system with AI browser agent integrat
 - ✅ MCP server integration with Claude Desktop (4:00-6:00)
 - ✅ AI browser agent instructions walkthrough (6:00-8:00)
 - ✅ Real-world nonprofit use case (8:00-10:00)
-
----
-
-## 🚀 Quick Start: MCP Server
-
-Want to use this directly with Claude Desktop or Cursor?
-
-1.  **Install dependencies**: `pip install -r requirements.txt`
-2.  **Configure your client** to run `python src/server_mcp.py`
-3.  **Set environment variables**: `OPENROUTER_API_KEY` and `MAI_ADVISOR_OUTPUT_DIR`
-
-👉 **[Read the Full MCP Setup Guide](docs/deployment/MCP_SERVER_SETUP.md)**
 
 ---
 

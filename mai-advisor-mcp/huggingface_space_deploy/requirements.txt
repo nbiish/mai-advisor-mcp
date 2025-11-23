@@ -1,5 +1,5 @@
 # Core dependencies for MAI Advisor MCP
-gradio>=4.44.0,<6.0.0
+gradio==5.49.1
 pydantic>=2.0.0
 
 # Optional: AI Research Agent (comment out for basic demo)
