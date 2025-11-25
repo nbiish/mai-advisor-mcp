@@ -13,14 +13,7 @@
 .windsurf/
 .aider*
 .trae/
-
-# Generated Content
-mai-advisor-mcp/advisors_output/*.md
-mai-advisor-mcp/advisors_output/*.json
-mai-advisor-mcp/grant_dorks/*.json
-mai-advisor-mcp/orchestrator_output/*.md
-mai-advisor-mcp/agent-instructions/*.md
-mai-advisor-mcp/huggingface_space_deploy/.git
+docs/
 
 # Environment and configuration files
 .env

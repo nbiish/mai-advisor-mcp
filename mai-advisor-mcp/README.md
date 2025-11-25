@@ -11,6 +11,7 @@ license: mit
 tags:
   - mcp-in-action-track-enterprise
   - building-mcp-track-enterprise
+  - mcp-server
 short_description: Complete grant planning system with AI browser agent integration and native MCP server. Generates strategic frameworks, search queries, and autonomous agent instructions for nonprofits.
 ---
 
