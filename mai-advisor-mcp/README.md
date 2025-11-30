@@ -24,22 +24,22 @@ short_description: Complete grant planning system with AI browser agent integrat
 
 **🏆 MCP 1st Birthday Hackathon Submission**
 - **Tracks:** MCP in Action (Enterprise) + Building MCP (Enterprise)
-- **Submission Date:** November 16, 2025
+- **Submission Date:** November 29, 2025
 - **Team:** nbiish
-- **Social Post:** [ADD YOUR TWITTER/LINKEDIN POST LINK AFTER YOU POST]
+- **Demo Video & Social Post:** [📱 LinkedIn Post with Demo Video](https://www.linkedin.com/posts/nbiish_mcphackathon-mcp1stbirthday-huggingfacehackathon-activity-7400758106785214464-ApdZ)
 
 ---
 
 ## 📹 Demo Video
 
-**[🎥 WATCH DEMO VIDEO HERE - ADD YOUR YOUTUBE/LOOM LINK]**
+[![MAI Advisor Demo](https://img.shields.io/badge/🎥_Watch_Demo-LinkedIn-blue)](https://www.linkedin.com/posts/nbiish_mcphackathon-mcp1stbirthday-huggingfacehackathon-activity-7400758106785214464-ApdZ)
+
+**[🎥 WATCH DEMO VIDEO ON LINKEDIN](https://www.linkedin.com/posts/nbiish_mcphackathon-mcp1stbirthday-huggingfacehackathon-activity-7400758106785214464-ApdZ)**
 
 *Video showcases:*
-- ✅ Gradio web interface workflow (0:00-2:30)
-- ✅ All 6 output files generated (2:30-4:00)
-- ✅ MCP server integration with Claude Desktop (4:00-6:00)
-- ✅ AI browser agent instructions walkthrough (6:00-8:00)
-- ✅ Real-world nonprofit use case (8:00-10:00)
+- ✅ MCP server integration demo
+- ✅ Grant planning workflow in action
+- ✅ Real-world nonprofit use case
 
 ---
 
@@ -538,9 +538,9 @@ python app_workflow.py
 
 ## 📞 Support & Contact
 
-- **GitHub Issues:** [Report bugs or request features]
+- **GitHub Issues:** [Report bugs or request features](https://github.com/nbiish/mai-advisor-mcp/issues)
 - **Discord:** [Join hackathon Discord](https://discord.gg/fveShqytyh)
-- **Social:** [YOUR_TWITTER/LINKEDIN]
+- **LinkedIn:** [nbiish](https://www.linkedin.com/in/nbiish)
 
 ---
 
